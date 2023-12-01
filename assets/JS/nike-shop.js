@@ -1,6 +1,7 @@
 const iconNum = document.getElementById('added-product-number');
 const navIconDiv = document.getElementById('navbar-icon-div');
 
+// products count
 let totalNum = 0;
 let shoe1 = 0;
 let shoe2 = 0;
@@ -15,6 +16,7 @@ let shoe10 = 0;
 let shoe11 = 0;
 let shoe12 = 0;
 
+// cards adding btns
 const addBtn1 = document.getElementById('product-add-btn1');
 const addBtn2 = document.getElementById('product-add-btn2');
 const addBtn3 = document.getElementById('product-add-btn3');
@@ -28,6 +30,7 @@ const addBtn10 = document.getElementById('product-add-btn10');
 const addBtn11 = document.getElementById('product-add-btn11');
 const addBtn12 = document.getElementById('product-add-btn12');
 
+// cards removing btns
 const removeBtn1 = document.getElementById('product-remove-btn1');
 const removeBtn2 = document.getElementById('product-remove-btn2');
 const removeBtn3 = document.getElementById('product-remove-btn3');
@@ -41,6 +44,7 @@ const removeBtn10 = document.getElementById('product-remove-btn10');
 const removeBtn11 = document.getElementById('product-remove-btn11');
 const removeBtn12 = document.getElementById('product-remove-btn12');
 
+// products counter that can be seen on cards
 const counter1 = document.getElementById('counter1');
 const counter2 = document.getElementById('counter2');
 const counter3 = document.getElementById('counter3');
@@ -53,6 +57,7 @@ const counter9 = document.getElementById('counter9');
 const counter10 = document.getElementById('counter10');
 const counter11 = document.getElementById('counter11');
 const counter12 = document.getElementById('counter12');
+
 
 // product specifications
 const product1 = {
@@ -132,7 +137,7 @@ const cardTitle11 = document.getElementById('card-title11').innerText = 'nike sa
 const cardTitle12 = document.getElementById('card-title12').innerText = 'nike vomero 17';
 
 
-// adding btns
+// adding btns func
 addBtn1.addEventListener('click', () => {
     navIconDiv.classList.remove('d-none');
     removeBtn1.classList.remove('d-none');
@@ -266,7 +271,7 @@ addBtn12.addEventListener('click', () => {
 });
 
 
-// remove btns
+// remove btns func
 removeBtn1.addEventListener('click', () => {
     shoe1 -= 1;
     totalNum -= 1;
