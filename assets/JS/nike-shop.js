@@ -62,65 +62,89 @@ const counter12 = document.getElementById('counter12');
 // product specifications
 const product1 = {
     id: 1,
+    img:'./assets/images/main img/products/nike-shoe1.png',
     pName: 'nike air max penny',
     cost: 149
 }
 const product2 = {
     id: 2,
+    img:'./assets/images/main img/products/nike-shoe2.png',
     pName: 'nike dunk',
     cost: 137
 }
 const product3 = {
     id: 3,
+    img:'./assets/images/main img/products/nike-shoe3.png',
     pName: 'nike air force 1 mid',
     cost: 100
 }
 const product4 = {
     id: 4,
+    img:'./assets/images/main img/products/nike-shoe4.png',
     pName: 'jordan retro',
     cost: 190
 }
 const product5 = {
     id: 5,
+    img:'./assets/images/main img/products/nike-shoe5.png',
     pName: 'nike air max 1',
     cost: 120
 }
 const product6 = {
     id: 6,
+    img:'./assets/images/main img/products/nike-shoe6.png',
     pName: 'nike dunk low retro',
     cost: 122
 }
 const product7 = {
     id: 7,
+    img:'./assets/images/main img/products/nike-shoe7.png',
     pName: 'nike full force low',
     cost: 120
 }
 const product8 = {
     id: 8,
+    img:'./assets/images/main img/products/nike-shoe8.png',
     pName: 'nike G.t jump',
     cost: 180
 }
 const product9 = {
     id: 9,
+    img:'./assets/images/main img/products/nike-shoe9.png',
     pName: 'nike freak 5',
     cost: 120
 }
 const product10 = {
     id: 10,
+    img:'./assets/images/main img/products/nike-shoe10.png',
     pName: 'nike KD16',
     cost: 132
 }
 const product11 = {
     id: 11,
+    img:'./assets/images/main img/products/nike-shoe11.png',
     pName: 'nike sabrina 1',
     cost: 110
 }
 const product12 = {
     id: 12,
+    img:'./assets/images/main img/products/nike-shoe12.png',
     pName: 'nike vomero 17',
     cost: 180
 }
 
+const cardImg1 = document.getElementById('card-img1').setAttribute('src' , product1.img);
+const cardImg2 = document.getElementById('card-img2').setAttribute('src' , product2.img);
+const cardImg3 = document.getElementById('card-img3').setAttribute('src' , product3.img);
+const cardImg4 = document.getElementById('card-img4').setAttribute('src' , product4.img);
+const cardImg5 = document.getElementById('card-img5').setAttribute('src' , product5.img);
+const cardImg6 = document.getElementById('card-img6').setAttribute('src' , product6.img);
+const cardImg7 = document.getElementById('card-img7').setAttribute('src' , product7.img);
+const cardImg8 = document.getElementById('card-img8').setAttribute('src' , product8.img);
+const cardImg9 = document.getElementById('card-img9').setAttribute('src' , product9.img);
+const cardImg10 = document.getElementById('card-img10').setAttribute('src' , product10.img);
+const cardImg11 = document.getElementById('card-img11').setAttribute('src' , product11.img);
+const cardImg12 = document.getElementById('card-img12').setAttribute('src' , product12.img);
 
 // products titles
 const cardTitle1 = document.getElementById('card-title1').innerText = product1.pName;
