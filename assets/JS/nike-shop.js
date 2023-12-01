@@ -155,9 +155,8 @@ product.map(item => {
          </div>
 
          <div class="mb-2 w-100 d-flex justify-content-center">
-             <button class="btn btn-light px-4 shadow rounded-5" id="product-add-btn1">add</button>
-             <button class="btn btn-danger px-2 shadow rounded-5 d-none"
-                 id="product-remove-btn1">remove</button>
+             <button class="btn btn-light px-4 shadow rounded-5">add</button>
+             <button class="btn btn-danger px-2 shadow rounded-5 d-none">remove</button>
          </div>
          <div class="card-footer">
              <small class="text-body-secondary">just now</small>
