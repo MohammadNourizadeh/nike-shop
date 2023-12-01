@@ -72,11 +72,19 @@ const product = [{
     cost: 180
 }]
 
+const choosedProduct = [];
+const productAdder = (item) => {
+    choosedProduct.push(item);
+
+    console.log(choosedProduct);
+}
+
+
 const productRow = document.getElementById('product-row');
 product.map(item => {
     const productCol = document.createElement('div');
     productCol.classList.add('col');
-    productCol.setAttribute('key' , `${item.id}`)
+    productCol.setAttribute('key', `${item.id}`)
 
     productCol.innerHTML = `
         <div class="card h-100 shadow">
@@ -95,7 +103,7 @@ product.map(item => {
          </div>
 
          <div class="mb-2 w-100 d-flex justify-content-center">
-             <button class="btn btn-light px-4 shadow rounded-5" id="adding-btn">add</button>
+         <button class="btn btn-light px-4 shadow rounded-5" onclick='${() => {productAdder(item)}}'>add</button>
              <button class="btn btn-danger px-2 shadow rounded-5 d-none" id="removing-btn">remove</button>
          </div>
          <div class="card-footer">
@@ -108,8 +116,3 @@ product.map(item => {
 
 })
 
-
-const addingBtn = document.getElementById('adding-btn');
-addingBtn.addEventListener('click', () => {
-
-})
