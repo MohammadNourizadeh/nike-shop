@@ -117,6 +117,21 @@ const product12 = {
 }
 
 
+// product title
+const cardTitle1 = document.getElementById('card-title1').innerText = 'nike air max penny';
+const cardTitle2 = document.getElementById('card-title2').innerText = 'nike dunk';
+const cardTitle3 = document.getElementById('card-title3').innerText = 'nike air force 1 mid';
+const cardTitle4 = document.getElementById('card-title4').innerText = 'jordan retro';
+const cardTitle5 = document.getElementById('card-title5').innerText = 'nike air max 1';
+const cardTitle6 = document.getElementById('card-title6').innerText = 'nike dunk low retro';
+const cardTitle7 = document.getElementById('card-title7').innerText = 'nike full force low';
+const cardTitle8 = document.getElementById('card-title8').innerText = 'nike G.t jump';
+const cardTitle9 = document.getElementById('card-title9').innerText = 'nike freak 5';
+const cardTitle0 = document.getElementById('card-title0').innerText = 'nike KD16';
+const cardTitle11 = document.getElementById('card-title11').innerText = 'nike sabrina 1';
+const cardTitle12 = document.getElementById('card-title12').innerText = 'nike vomero 17';
+
+
 // adding btns
 addBtn1.addEventListener('click', () => {
     navIconDiv.classList.remove('d-none');
