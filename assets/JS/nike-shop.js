@@ -63,78 +63,93 @@ const counter12 = document.getElementById('counter12');
 const product1 = {
     id: 1,
     pName: 'nike air max penny',
-    const: 149
+    cost: 149
 }
 const product2 = {
     id: 2,
     pName: 'nike dunk',
-    const: 137
+    cost: 137
 }
 const product3 = {
     id: 3,
     pName: 'nike air force 1 mid',
-    const: 100
+    cost: 100
 }
 const product4 = {
     id: 4,
     pName: 'jordan retro',
-    const: 190
+    cost: 190
 }
 const product5 = {
     id: 5,
     pName: 'nike air max 1',
-    const: 120
+    cost: 120
 }
 const product6 = {
     id: 6,
     pName: 'nike dunk low retro',
-    const: 122
+    cost: 122
 }
 const product7 = {
     id: 7,
     pName: 'nike full force low',
-    const: 120
+    cost: 120
 }
 const product8 = {
     id: 8,
     pName: 'nike G.t jump',
-    const: 180
+    cost: 180
 }
 const product9 = {
     id: 9,
     pName: 'nike freak 5',
-    const: 120
+    cost: 120
 }
 const product10 = {
     id: 10,
     pName: 'nike KD16',
-    const: 132
+    cost: 132
 }
 const product11 = {
     id: 11,
     pName: 'nike sabrina 1',
-    const: 110
+    cost: 110
 }
 const product12 = {
     id: 12,
     pName: 'nike vomero 17',
-    const: 180
+    cost: 180
 }
 
 
-// product title
-const cardTitle1 = document.getElementById('card-title1').innerText = 'nike air max penny';
-const cardTitle2 = document.getElementById('card-title2').innerText = 'nike dunk';
-const cardTitle3 = document.getElementById('card-title3').innerText = 'nike air force 1 mid';
-const cardTitle4 = document.getElementById('card-title4').innerText = 'jordan retro';
-const cardTitle5 = document.getElementById('card-title5').innerText = 'nike air max 1';
-const cardTitle6 = document.getElementById('card-title6').innerText = 'nike dunk low retro';
-const cardTitle7 = document.getElementById('card-title7').innerText = 'nike full force low';
-const cardTitle8 = document.getElementById('card-title8').innerText = 'nike G.t jump';
-const cardTitle9 = document.getElementById('card-title9').innerText = 'nike freak 5';
-const cardTitle0 = document.getElementById('card-title0').innerText = 'nike KD16';
-const cardTitle11 = document.getElementById('card-title11').innerText = 'nike sabrina 1';
-const cardTitle12 = document.getElementById('card-title12').innerText = 'nike vomero 17';
+// products titles
+const cardTitle1 = document.getElementById('card-title1').innerText = product1.pName;
+const cardTitle2 = document.getElementById('card-title2').innerText = product2.pName;
+const cardTitle3 = document.getElementById('card-title3').innerText = product3.pName;
+const cardTitle4 = document.getElementById('card-title4').innerText = product4.pName;
+const cardTitle5 = document.getElementById('card-title5').innerText = product5.pName;
+const cardTitle6 = document.getElementById('card-title6').innerText = product6.pName;
+const cardTitle7 = document.getElementById('card-title7').innerText = product7.pName;
+const cardTitle8 = document.getElementById('card-title8').innerText = product8.pName;
+const cardTitle9 = document.getElementById('card-title9').innerText = product9.pName;
+const cardTitle0 = document.getElementById('card-title10').innerText = product10.pName;
+const cardTitle11 = document.getElementById('card-title11').innerText = product11.pName;
+const cardTitle12 = document.getElementById('card-title12').innerText = product12.pName;
+
+
+// products costs
+const cardCost1 = document.getElementById('card-cost1').innerText = product1.cost;
+const cardCost2 = document.getElementById('card-cost2').innerText = product2.cost;
+const cardCost3 = document.getElementById('card-cost3').innerText = product3.cost;
+const cardCost4 = document.getElementById('card-cost4').innerText = product4.cost;
+const cardCost5 = document.getElementById('card-cost5').innerText = product5.cost;
+const cardCost6 = document.getElementById('card-cost6').innerText = product6.cost;
+const cardCost7 = document.getElementById('card-cost7').innerText = product7.cost;
+const cardCost8 = document.getElementById('card-cost8').innerText = product8.cost;
+const cardCost9 = document.getElementById('card-cost9').innerText = product9.cost;
+const cardCost10 = document.getElementById('card-cost10').innerText = product10.cost;
+const cardCost11 = document.getElementById('card-cost11').innerText = product11.cost;
+const cardCost12 = document.getElementById('card-cost12').innerText = product12.cost;
 
 
 // adding btns func
