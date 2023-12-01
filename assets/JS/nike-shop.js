@@ -1,6 +1,7 @@
 const iconNum = document.getElementById('added-product-number');
 const navIconDiv = document.getElementById('navbar-icon-div');
 
+// products count
 let totalNum = 0;
 let shoe1 = 0;
 let shoe2 = 0;
@@ -15,6 +16,7 @@ let shoe10 = 0;
 let shoe11 = 0;
 let shoe12 = 0;
 
+// cards adding btns
 const addBtn1 = document.getElementById('product-add-btn1');
 const addBtn2 = document.getElementById('product-add-btn2');
 const addBtn3 = document.getElementById('product-add-btn3');
@@ -28,6 +30,7 @@ const addBtn10 = document.getElementById('product-add-btn10');
 const addBtn11 = document.getElementById('product-add-btn11');
 const addBtn12 = document.getElementById('product-add-btn12');
 
+// cards removing btns
 const removeBtn1 = document.getElementById('product-remove-btn1');
 const removeBtn2 = document.getElementById('product-remove-btn2');
 const removeBtn3 = document.getElementById('product-remove-btn3');
@@ -41,6 +44,7 @@ const removeBtn10 = document.getElementById('product-remove-btn10');
 const removeBtn11 = document.getElementById('product-remove-btn11');
 const removeBtn12 = document.getElementById('product-remove-btn12');
 
+// products counter that can be seen on cards
 const counter1 = document.getElementById('counter1');
 const counter2 = document.getElementById('counter2');
 const counter3 = document.getElementById('counter3');
@@ -55,7 +59,124 @@ const counter11 = document.getElementById('counter11');
 const counter12 = document.getElementById('counter12');
 
 
-// adding btns
+// product specifications
+const product1 = {
+    id: 1,
+    img:'./assets/images/main img/products/nike-shoe1.png',
+    pName: 'nike air max penny',
+    cost: 149
+}
+const product2 = {
+    id: 2,
+    img:'./assets/images/main img/products/nike-shoe2.png',
+    pName: 'nike dunk',
+    cost: 137
+}
+const product3 = {
+    id: 3,
+    img:'./assets/images/main img/products/nike-shoe3.png',
+    pName: 'nike air force 1 mid',
+    cost: 100
+}
+const product4 = {
+    id: 4,
+    img:'./assets/images/main img/products/nike-shoe4.png',
+    pName: 'jordan retro',
+    cost: 190
+}
+const product5 = {
+    id: 5,
+    img:'./assets/images/main img/products/nike-shoe5.png',
+    pName: 'nike air max 1',
+    cost: 120
+}
+const product6 = {
+    id: 6,
+    img:'./assets/images/main img/products/nike-shoe6.png',
+    pName: 'nike dunk low retro',
+    cost: 122
+}
+const product7 = {
+    id: 7,
+    img:'./assets/images/main img/products/nike-shoe7.png',
+    pName: 'nike full force low',
+    cost: 120
+}
+const product8 = {
+    id: 8,
+    img:'./assets/images/main img/products/nike-shoe8.png',
+    pName: 'nike G.t jump',
+    cost: 180
+}
+const product9 = {
+    id: 9,
+    img:'./assets/images/main img/products/nike-shoe9.png',
+    pName: 'nike freak 5',
+    cost: 120
+}
+const product10 = {
+    id: 10,
+    img:'./assets/images/main img/products/nike-shoe10.png',
+    pName: 'nike KD16',
+    cost: 132
+}
+const product11 = {
+    id: 11,
+    img:'./assets/images/main img/products/nike-shoe11.png',
+    pName: 'nike sabrina 1',
+    cost: 110
+}
+const product12 = {
+    id: 12,
+    img:'./assets/images/main img/products/nike-shoe12.png',
+    pName: 'nike vomero 17',
+    cost: 180
+}
+
+const cardImg1 = document.getElementById('card-img1').setAttribute('src' , product1.img);
+const cardImg2 = document.getElementById('card-img2').setAttribute('src' , product2.img);
+const cardImg3 = document.getElementById('card-img3').setAttribute('src' , product3.img);
+const cardImg4 = document.getElementById('card-img4').setAttribute('src' , product4.img);
+const cardImg5 = document.getElementById('card-img5').setAttribute('src' , product5.img);
+const cardImg6 = document.getElementById('card-img6').setAttribute('src' , product6.img);
+const cardImg7 = document.getElementById('card-img7').setAttribute('src' , product7.img);
+const cardImg8 = document.getElementById('card-img8').setAttribute('src' , product8.img);
+const cardImg9 = document.getElementById('card-img9').setAttribute('src' , product9.img);
+const cardImg10 = document.getElementById('card-img10').setAttribute('src' , product10.img);
+const cardImg11 = document.getElementById('card-img11').setAttribute('src' , product11.img);
+const cardImg12 = document.getElementById('card-img12').setAttribute('src' , product12.img);
+
+// products titles
+const cardTitle1 = document.getElementById('card-title1').innerText = product1.pName;
+const cardTitle2 = document.getElementById('card-title2').innerText = product2.pName;
+const cardTitle3 = document.getElementById('card-title3').innerText = product3.pName;
+const cardTitle4 = document.getElementById('card-title4').innerText = product4.pName;
+const cardTitle5 = document.getElementById('card-title5').innerText = product5.pName;
+const cardTitle6 = document.getElementById('card-title6').innerText = product6.pName;
+const cardTitle7 = document.getElementById('card-title7').innerText = product7.pName;
+const cardTitle8 = document.getElementById('card-title8').innerText = product8.pName;
+const cardTitle9 = document.getElementById('card-title9').innerText = product9.pName;
+const cardTitle0 = document.getElementById('card-title10').innerText = product10.pName;
+const cardTitle11 = document.getElementById('card-title11').innerText = product11.pName;
+const cardTitle12 = document.getElementById('card-title12').innerText = product12.pName;
+
+
+// products costs
+const cardCost1 = document.getElementById('card-cost1').innerText = product1.cost;
+const cardCost2 = document.getElementById('card-cost2').innerText = product2.cost;
+const cardCost3 = document.getElementById('card-cost3').innerText = product3.cost;
+const cardCost4 = document.getElementById('card-cost4').innerText = product4.cost;
+const cardCost5 = document.getElementById('card-cost5').innerText = product5.cost;
+const cardCost6 = document.getElementById('card-cost6').innerText = product6.cost;
+const cardCost7 = document.getElementById('card-cost7').innerText = product7.cost;
+const cardCost8 = document.getElementById('card-cost8').innerText = product8.cost;
+const cardCost9 = document.getElementById('card-cost9').innerText = product9.cost;
+const cardCost10 = document.getElementById('card-cost10').innerText = product10.cost;
+const cardCost11 = document.getElementById('card-cost11').innerText = product11.cost;
+const cardCost12 = document.getElementById('card-cost12').innerText = product12.cost;
+
+
+// adding btns func
 addBtn1.addEventListener('click', () => {
     navIconDiv.classList.remove('d-none');
     removeBtn1.classList.remove('d-none');
@@ -189,7 +310,7 @@ addBtn12.addEventListener('click', () => {
 });
 
 
-// remove btns
+// remove btns func
 removeBtn1.addEventListener('click', () => {
     shoe1 -= 1;
     totalNum -= 1;
