@@ -54,6 +54,68 @@ const counter10 = document.getElementById('counter10');
 const counter11 = document.getElementById('counter11');
 const counter12 = document.getElementById('counter12');
 
+// product specifications
+const product1 = {
+    id: 1,
+    pName: 'nike air max penny',
+    const: 149
+}
+const product2 = {
+    id: 2,
+    pName: 'nike dunk',
+    const: 137
+}
+const product3 = {
+    id: 3,
+    pName: 'nike air force 1 mid',
+    const: 100
+}
+const product4 = {
+    id: 4,
+    pName: 'jordan retro',
+    const: 190
+}
+const product5 = {
+    id: 5,
+    pName: 'nike air max 1',
+    const: 120
+}
+const product6 = {
+    id: 6,
+    pName: 'nike dunk low retro',
+    const: 122
+}
+const product7 = {
+    id: 7,
+    pName: 'nike full force low',
+    const: 120
+}
+const product8 = {
+    id: 8,
+    pName: 'nike G.t jump',
+    const: 180
+}
+const product9 = {
+    id: 9,
+    pName: 'nike freak 5',
+    const: 120
+}
+const product10 = {
+    id: 10,
+    pName: 'nike KD16',
+    const: 132
+}
+const product11 = {
+    id: 11,
+    pName: 'nike sabrina 1',
+    const: 110
+}
+const product12 = {
+    id: 12,
+    pName: 'nike vomero 17',
+    const: 180
+}
+
 
 // adding btns
 addBtn1.addEventListener('click', () => {
