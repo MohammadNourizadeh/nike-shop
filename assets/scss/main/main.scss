@@ -1,0 +1,272 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.navbar-div {
+    .added-product-link {
+        text-decoration: none;
+        color: black;
+
+        div {
+            background-color: rgb(51, 51, 51);
+
+            small {
+                font-family: Impact, Haettenschweiler, sans-serif;
+            }
+        }
+    }
+
+    .navbar-list-div {
+
+        ul {
+
+            li {
+                margin-bottom: .5rem;
+
+                a {
+                    color: rgb(57, 57, 57);
+                    font-family: Impact, Haettenschweiler, sans-serif;
+
+                    &:hover {
+                        color: black;
+                        transition: color .2s ease-in-out;
+                    }
+
+                    i {
+                        font-size: 1.2rem;
+                        margin-right: .3rem;
+                    }
+                }
+
+                .main-item {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.my-carousel {
+    width: 100vw;
+    height: 42vh;
+
+    img {
+        object-fit: cover;
+    }
+}
+
+.side-bar-col {
+
+    .filter-nav-div {
+        display: flex;
+        justify-content: center;
+
+        nav {
+
+            div {
+
+                button {
+                    background-color: rgb(72, 72, 72);
+                    color: white;
+
+                    &:hover {
+                        background-color: rgb(55, 55, 55);
+                        transition: background .2s ease-in-out;
+                    }
+
+
+                    span {
+                        justify-content: center;
+                        align-items: center;
+                        font-size: small;
+
+                        i {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                div {
+
+                    .form-div {
+
+                        .form-option {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .new-products-carousel {
+        height: 40vh;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .just-do-it-gif-carousel {
+
+        h4 {
+            font-family: Impact, Haettenschweiler, sans-serif;
+        }
+
+        p {
+            text-align: center;
+            font-family: Impact, Haettenschweiler, sans-serif;
+        }
+    }
+}
+
+.pagination-div {
+
+    .pagination-row {
+
+        .pagination-col {
+
+            nav {
+
+                ul {
+
+                    li {
+
+                        a {
+                            font-family: Impact, Haettenschweiler, sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    overflow: hidden;
+
+    .row {
+        height: 65vh;
+        background-color: rgb(18, 18, 18);
+
+        .first-col {
+            display: flex;
+            justify-content: center;
+
+            ul {
+                list-style: none;
+
+                li {
+                    margin-bottom: 1rem;
+
+                    a {
+                        font-family: Impact, Haettenschweiler, sans-serif;
+                        text-decoration: none;
+                        color: rgb(230, 230, 230);
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+
+        .second-col {
+            display: flex;
+            justify-content: center;
+
+            ul {
+                list-style: none;
+
+                .footer-link-header {
+
+                    a {
+                        font-family: Impact, Haettenschweiler, sans-serif;
+                        text-decoration: none;
+                        color: rgb(230, 230, 230);
+                        font-size: .8rem;
+
+                        &:hover {
+                            color: aliceblue;
+                            transition: color .2s ease-in-out;
+                        }
+                    }
+                }
+
+                li {
+                    margin-bottom: 1rem;
+
+                    a {
+                        font-family: Impact, Haettenschweiler, sans-serif;
+                        text-decoration: none;
+                        color: rgb(134, 134, 134);
+                        font-size: .75rem;
+
+                        &:hover {
+                            color: aliceblue;
+                            transition: color .2s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        .third-col {
+            display: flex;
+            justify-content: center;
+
+            ul {
+                list-style: none;
+
+                .footer-link-header {
+
+                    a {
+                        font-family: Impact, Haettenschweiler, sans-serif;
+                        text-decoration: none;
+                        color: rgb(230, 230, 230);
+                        font-size: .8rem;
+
+                        &:hover {
+                            color: aliceblue;
+                            transition: color .2s ease-in-out;
+                        }
+                    }
+                }
+
+                li {
+                    margin-bottom: 1rem;
+
+                    a {
+                        font-family: Impact, Haettenschweiler, sans-serif;
+                        text-decoration: none;
+                        color: rgb(134, 134, 134);
+                        font-size: .75rem;
+
+                        &:hover {
+                            color: aliceblue;
+                            transition: color .2s ease-in-out;
+                        }
+                    }
+                }
+            }
+
+            .social-media-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 2rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

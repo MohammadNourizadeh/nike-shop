@@ -1,0 +1,182 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+
+.navbar-div .added-product-link {
+  text-decoration: none;
+  color: black;
+}
+.navbar-div .added-product-link div {
+  background-color: rgb(51, 51, 51);
+}
+.navbar-div .added-product-link div small {
+  font-family: Impact, Haettenschweiler, sans-serif;
+}
+.navbar-div .navbar-list-div ul li {
+  margin-bottom: 0.5rem;
+}
+.navbar-div .navbar-list-div ul li a {
+  color: rgb(57, 57, 57);
+  font-family: Impact, Haettenschweiler, sans-serif;
+}
+.navbar-div .navbar-list-div ul li a:hover {
+  color: black;
+  transition: color 0.2s ease-in-out;
+}
+.navbar-div .navbar-list-div ul li a i {
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+.navbar-div .navbar-list-div ul li .main-item:hover {
+  text-decoration: underline;
+}
+
+.my-carousel {
+  width: 100vw;
+  height: 42vh;
+}
+.my-carousel img {
+  object-fit: cover;
+}
+
+.side-bar-col .filter-nav-div {
+  display: flex;
+  justify-content: center;
+}
+.side-bar-col .filter-nav-div nav div button {
+  background-color: rgb(72, 72, 72);
+  color: white;
+}
+.side-bar-col .filter-nav-div nav div button:hover {
+  background-color: rgb(55, 55, 55);
+  transition: background 0.2s ease-in-out;
+}
+.side-bar-col .filter-nav-div nav div button span {
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}
+.side-bar-col .filter-nav-div nav div button span i {
+  font-size: 1rem;
+}
+.side-bar-col .filter-nav-div nav div div .form-div .form-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.side-bar-col .new-products-carousel {
+  height: 40vh;
+}
+.side-bar-col .new-products-carousel img {
+  object-fit: cover;
+}
+.side-bar-col .just-do-it-gif-carousel h4 {
+  font-family: Impact, Haettenschweiler, sans-serif;
+}
+.side-bar-col .just-do-it-gif-carousel p {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, sans-serif;
+}
+
+.pagination-div .pagination-row .pagination-col nav ul li a {
+  font-family: Impact, Haettenschweiler, sans-serif;
+}
+
+.footer {
+  overflow: hidden;
+}
+.footer .row {
+  height: 65vh;
+  background-color: rgb(18, 18, 18);
+}
+.footer .row .first-col {
+  display: flex;
+  justify-content: center;
+}
+.footer .row .first-col ul {
+  list-style: none;
+}
+.footer .row .first-col ul li {
+  margin-bottom: 1rem;
+}
+.footer .row .first-col ul li a {
+  font-family: Impact, Haettenschweiler, sans-serif;
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+  font-size: 0.8rem;
+}
+.footer .row .second-col {
+  display: flex;
+  justify-content: center;
+}
+.footer .row .second-col ul {
+  list-style: none;
+}
+.footer .row .second-col ul .footer-link-header a {
+  font-family: Impact, Haettenschweiler, sans-serif;
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+  font-size: 0.8rem;
+}
+.footer .row .second-col ul .footer-link-header a:hover {
+  color: aliceblue;
+  transition: color 0.2s ease-in-out;
+}
+.footer .row .second-col ul li {
+  margin-bottom: 1rem;
+}
+.footer .row .second-col ul li a {
+  font-family: Impact, Haettenschweiler, sans-serif;
+  text-decoration: none;
+  color: rgb(134, 134, 134);
+  font-size: 0.75rem;
+}
+.footer .row .second-col ul li a:hover {
+  color: aliceblue;
+  transition: color 0.2s ease-in-out;
+}
+.footer .row .third-col {
+  display: flex;
+  justify-content: center;
+}
+.footer .row .third-col ul {
+  list-style: none;
+}
+.footer .row .third-col ul .footer-link-header a {
+  font-family: Impact, Haettenschweiler, sans-serif;
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+  font-size: 0.8rem;
+}
+.footer .row .third-col ul .footer-link-header a:hover {
+  color: aliceblue;
+  transition: color 0.2s ease-in-out;
+}
+.footer .row .third-col ul li {
+  margin-bottom: 1rem;
+}
+.footer .row .third-col ul li a {
+  font-family: Impact, Haettenschweiler, sans-serif;
+  text-decoration: none;
+  color: rgb(134, 134, 134);
+  font-size: 0.75rem;
+}
+.footer .row .third-col ul li a:hover {
+  color: aliceblue;
+  transition: color 0.2s ease-in-out;
+}
+.footer .row .third-col .social-media-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .row .third-col .social-media-div img {
+  width: 2rem;
+  height: auto;
+}
+
+/*# sourceMappingURL=main.css.map */
