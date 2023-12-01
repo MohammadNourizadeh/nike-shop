@@ -60,445 +60,111 @@ const counter12 = document.getElementById('counter12');
 
 
 // product specifications
-const product1 = {
+const product = [{
     id: 1,
-    img:'./assets/images/main img/products/nike-shoe1.png',
+    img: './assets/images/main-img/products/nike-shoe1.png',
     pName: 'nike air max penny',
     cost: 149
-}
-const product2 = {
+},
+{
     id: 2,
-    img:'./assets/images/main img/products/nike-shoe2.png',
+    img: './assets/images/main-img/products/nike-shoe2.png',
     pName: 'nike dunk',
     cost: 137
-}
-const product3 = {
+},
+{
     id: 3,
-    img:'./assets/images/main img/products/nike-shoe3.png',
+    img: './assets/images/main-img/products/nike-shoe3.png',
     pName: 'nike air force 1 mid',
     cost: 100
-}
-const product4 = {
+},
+{
     id: 4,
-    img:'./assets/images/main img/products/nike-shoe4.png',
+    img: './assets/images/main-img/products/nike-shoe4.png',
     pName: 'jordan retro',
     cost: 190
-}
-const product5 = {
+},
+{
     id: 5,
-    img:'./assets/images/main img/products/nike-shoe5.png',
+    img: './assets/images/main-img/products/nike-shoe5.png',
     pName: 'nike air max 1',
     cost: 120
-}
-const product6 = {
+},
+{
     id: 6,
-    img:'./assets/images/main img/products/nike-shoe6.png',
+    img: './assets/images/main-img/products/nike-shoe6.png',
     pName: 'nike dunk low retro',
     cost: 122
-}
-const product7 = {
+},
+{
     id: 7,
-    img:'./assets/images/main img/products/nike-shoe7.png',
+    img: './assets/images/main-img/products/nike-shoe7.png',
     pName: 'nike full force low',
     cost: 120
-}
-const product8 = {
+},
+{
     id: 8,
-    img:'./assets/images/main img/products/nike-shoe8.png',
+    img: './assets/images/main-img/products/nike-shoe8.png',
     pName: 'nike G.t jump',
     cost: 180
-}
-const product9 = {
+},
+{
     id: 9,
-    img:'./assets/images/main img/products/nike-shoe9.png',
+    img: './assets/images/main-img/products/nike-shoe9.png',
     pName: 'nike freak 5',
     cost: 120
-}
-const product10 = {
+},
+{
     id: 10,
-    img:'./assets/images/main img/products/nike-shoe10.png',
+    img: './assets/images/main-img/products/nike-shoe10.png',
     pName: 'nike KD16',
     cost: 132
-}
-const product11 = {
+},
+{
     id: 11,
-    img:'./assets/images/main img/products/nike-shoe11.png',
+    img: './assets/images/main-img/products/nike-shoe11.png',
     pName: 'nike sabrina 1',
     cost: 110
-}
-const product12 = {
+},
+{
     id: 12,
-    img:'./assets/images/main img/products/nike-shoe12.png',
+    img: './assets/images/main-img/products/nike-shoe12.png',
     pName: 'nike vomero 17',
     cost: 180
-}
+}]
+
+const productRow = document.getElementById('product-row');
+product.map(item => {
+    const productCol = document.createElement('div');
+    productCol.classList.add('col');
+
+    productCol.innerHTML = `
+        <div class="card h-100 shadow">
+         <div class="product-img-div position-relative">
+             <small id="counter1" class="position-absolute end-0 h5 d-none"></small>
+             <img src=${item.img} class="card-img-top" alt="...">
+         </div>
+         <div class="card-body">
+             <h5 class="card-title" id="card-title1">${item.pName}</h5>
+             <button class="btn p-0" aria-expanded="false"><small class="text-body-secondary">2
+                     colors</small></button>
+             <div class="d-flex mt-2">
+                 <i class="material-icons">attach_money</i>
+                 <p class="card-text h5">${item.cost}</p>
+             </div>
+         </div>
+
+         <div class="mb-2 w-100 d-flex justify-content-center">
+             <button class="btn btn-light px-4 shadow rounded-5" id="product-add-btn1">add</button>
+             <button class="btn btn-danger px-2 shadow rounded-5 d-none"
+                 id="product-remove-btn1">remove</button>
+         </div>
+         <div class="card-footer">
+             <small class="text-body-secondary">just now</small>
+         </div>
+        </div>
+    `
+
+    productRow.appendChild(productCol);
 
-const cardImg1 = document.getElementById('card-img1').setAttribute('src' , product1.img);
-const cardImg2 = document.getElementById('card-img2').setAttribute('src' , product2.img);
-const cardImg3 = document.getElementById('card-img3').setAttribute('src' , product3.img);
-const cardImg4 = document.getElementById('card-img4').setAttribute('src' , product4.img);
-const cardImg5 = document.getElementById('card-img5').setAttribute('src' , product5.img);
-const cardImg6 = document.getElementById('card-img6').setAttribute('src' , product6.img);
-const cardImg7 = document.getElementById('card-img7').setAttribute('src' , product7.img);
-const cardImg8 = document.getElementById('card-img8').setAttribute('src' , product8.img);
-const cardImg9 = document.getElementById('card-img9').setAttribute('src' , product9.img);
-const cardImg10 = document.getElementById('card-img10').setAttribute('src' , product10.img);
-const cardImg11 = document.getElementById('card-img11').setAttribute('src' , product11.img);
-const cardImg12 = document.getElementById('card-img12').setAttribute('src' , product12.img);
-
-// products titles
-const cardTitle1 = document.getElementById('card-title1').innerText = product1.pName;
-const cardTitle2 = document.getElementById('card-title2').innerText = product2.pName;
-const cardTitle3 = document.getElementById('card-title3').innerText = product3.pName;
-const cardTitle4 = document.getElementById('card-title4').innerText = product4.pName;
-const cardTitle5 = document.getElementById('card-title5').innerText = product5.pName;
-const cardTitle6 = document.getElementById('card-title6').innerText = product6.pName;
-const cardTitle7 = document.getElementById('card-title7').innerText = product7.pName;
-const cardTitle8 = document.getElementById('card-title8').innerText = product8.pName;
-const cardTitle9 = document.getElementById('card-title9').innerText = product9.pName;
-const cardTitle0 = document.getElementById('card-title10').innerText = product10.pName;
-const cardTitle11 = document.getElementById('card-title11').innerText = product11.pName;
-const cardTitle12 = document.getElementById('card-title12').innerText = product12.pName;
-
-
-// products costs
-const cardCost1 = document.getElementById('card-cost1').innerText = product1.cost;
-const cardCost2 = document.getElementById('card-cost2').innerText = product2.cost;
-const cardCost3 = document.getElementById('card-cost3').innerText = product3.cost;
-const cardCost4 = document.getElementById('card-cost4').innerText = product4.cost;
-const cardCost5 = document.getElementById('card-cost5').innerText = product5.cost;
-const cardCost6 = document.getElementById('card-cost6').innerText = product6.cost;
-const cardCost7 = document.getElementById('card-cost7').innerText = product7.cost;
-const cardCost8 = document.getElementById('card-cost8').innerText = product8.cost;
-const cardCost9 = document.getElementById('card-cost9').innerText = product9.cost;
-const cardCost10 = document.getElementById('card-cost10').innerText = product10.cost;
-const cardCost11 = document.getElementById('card-cost11').innerText = product11.cost;
-const cardCost12 = document.getElementById('card-cost12').innerText = product12.cost;
-
-
-// adding btns func
-addBtn1.addEventListener('click', () => {
-    navIconDiv.classList.remove('d-none');
-    removeBtn1.classList.remove('d-none');
-    counter1.classList.remove('d-none');
-
-    totalNum += 1;
-    iconNum.innerText = totalNum;
-    shoe1 += 1;
-    counter1.innerText = shoe1;
-});
-
-addBtn2.addEventListener('click', () => {
-    navIconDiv.classList.remove('d-none');
-    removeBtn2.classList.remove('d-none');
-    counter2.classList.remove('d-none');
-
-    totalNum += 1;
-    iconNum.innerText = totalNum;
-    shoe2 += 1;
-    counter2.innerText = shoe2;
-});
-
-addBtn3.addEventListener('click', () => {
-    navIconDiv.classList.remove('d-none');
-    removeBtn3.classList.remove('d-none');
-    counter3.classList.remove('d-none');
-
-    totalNum += 1;
-    iconNum.innerText = totalNum;
-    shoe3 += 1;
-    counter3.innerText = shoe3;
-});
-
-addBtn4.addEventListener('click', () => {
-    navIconDiv.classList.remove('d-none');
-    removeBtn4.classList.remove('d-none');
-    counter4.classList.remove('d-none');
-
-    totalNum += 1;
-    iconNum.innerText = totalNum;
-    shoe4 += 1;
-    counter4.innerText = shoe4;
-});
-
-addBtn5.addEventListener('click', () => {
-    navIconDiv.classList.remove('d-none');
-    removeBtn5.classList.remove('d-none');
-    counter5.classList.remove('d-none');
-
-    totalNum += 1;
-    iconNum.innerText = totalNum;
-    shoe5 += 1;
-    counter5.innerText = shoe5;
-});
-
-addBtn6.addEventListener('click', () => {
-    navIconDiv.classList.remove('d-none');
-    removeBtn6.classList.remove('d-none');
-    counter6.classList.remove('d-none');
-
-    totalNum += 1;
-    iconNum.innerText = totalNum;
-    shoe6 += 1;
-    counter6.innerText = shoe6;
-});
-
-addBtn7.addEventListener('click', () => {
-    navIconDiv.classList.remove('d-none');
-    removeBtn7.classList.remove('d-none');
-    counter7.classList.remove('d-none');
-
-    totalNum += 1;
-    iconNum.innerText = totalNum;
-    shoe7 += 1;
-    counter7.innerText = shoe7;
-});
-
-addBtn8.addEventListener('click', () => {
-    navIconDiv.classList.remove('d-none');
-    removeBtn8.classList.remove('d-none');
-    counter8.classList.remove('d-none');
-
-    totalNum += 1;
-    iconNum.innerText = totalNum;
-    shoe8 += 1;
-    counter8.innerText = shoe8;
-});
-
-addBtn9.addEventListener('click', () => {
-    navIconDiv.classList.remove('d-none');
-    removeBtn9.classList.remove('d-none');
-    counter9.classList.remove('d-none');
-
-    totalNum += 1;
-    iconNum.innerText = totalNum;
-    shoe9 += 1;
-    counter9.innerText = shoe9;
-});
-
-addBtn10.addEventListener('click', () => {
-    navIconDiv.classList.remove('d-none');
-    removeBtn10.classList.remove('d-none');
-    counter10.classList.remove('d-none');
-
-    totalNum += 1;
-    iconNum.innerText = totalNum;
-    shoe10 += 1;
-    counter10.innerText = shoe10;
-});
-
-addBtn11.addEventListener('click', () => {
-    navIconDiv.classList.remove('d-none');
-    removeBtn11.classList.remove('d-none');
-    counter11.classList.remove('d-none');
-
-    totalNum += 1;
-    iconNum.innerText = totalNum;
-    shoe11 += 1;
-    counter11.innerText = shoe11;
-});
-
-addBtn12.addEventListener('click', () => {
-    navIconDiv.classList.remove('d-none');
-    removeBtn12.classList.remove('d-none');
-    counter12.classList.remove('d-none');
-
-    totalNum += 1;
-    iconNum.innerText = totalNum;
-    shoe12 += 1;
-    counter12.innerText = shoe12;
-});
-
-
-// remove btns func
-removeBtn1.addEventListener('click', () => {
-    shoe1 -= 1;
-    totalNum -= 1;
-    iconNum.innerText = totalNum;
-    counter1.innerText = shoe1;
-
-    if (shoe1 === 0) {
-        removeBtn1.classList.add('d-none');
-        counter1.classList.add('d-none');
-    }
-
-    if (totalNum === 0) {
-        navIconDiv.classList.add('d-none')
-    }
-})
-
-removeBtn2.addEventListener('click', () => {
-    shoe2 -= 1;
-    totalNum -= 1;
-    iconNum.innerText = totalNum;
-    counter2.innerText = shoe2;
-
-    if (shoe2 === 0) {
-        removeBtn2.classList.add('d-none');
-        counter2.classList.add('d-none');
-    }
-
-    if (totalNum === 0) {
-        navIconDiv.classList.add('d-none')
-    }
-})
-
-removeBtn3.addEventListener('click', () => {
-    shoe3 -= 1;
-    totalNum -= 1;
-    iconNum.innerText = totalNum;
-    counter3.innerText = shoe3;
-
-    if (shoe3 === 0) {
-        removeBtn3.classList.add('d-none');
-        counter3.classList.add('d-none');
-    }
-
-    if (totalNum === 0) {
-        navIconDiv.classList.add('d-none')
-    }
-})
-
-removeBtn4.addEventListener('click', () => {
-    shoe4 -= 1;
-    totalNum -= 1;
-    iconNum.innerText = totalNum;
-    counter4.innerText = shoe4;
-
-    if (shoe4 === 0) {
-        removeBtn4.classList.add('d-none');
-        counter4.classList.add('d-none');
-    }
-
-    if (totalNum === 0) {
-        navIconDiv.classList.add('d-none')
-    }
-})
-
-removeBtn5.addEventListener('click', () => {
-    shoe5 -= 1;
-    totalNum -= 1;
-    iconNum.innerText = totalNum;
-    counter5.innerText = shoe5;
-
-    if (shoe5 === 0) {
-        removeBtn5.classList.add('d-none');
-        counter5.classList.add('d-none');
-    }
-
-    if (totalNum === 0) {
-        navIconDiv.classList.add('d-none')
-    }
-})
-
-removeBtn6.addEventListener('click', () => {
-    shoe6 -= 1;
-    totalNum -= 1;
-    iconNum.innerText = totalNum;
-    counter6.innerText = shoe6;
-
-    if (shoe6 === 0) {
-        removeBtn6.classList.add('d-none');
-        counter6.classList.add('d-none');
-    }
-
-    if (totalNum === 0) {
-        navIconDiv.classList.add('d-none')
-    }
-})
-
-removeBtn7.addEventListener('click', () => {
-    shoe7 -= 1;
-    totalNum -= 1;
-    iconNum.innerText = totalNum;
-    counter7.innerText = shoe7;
-
-    if (shoe7 === 0) {
-        removeBtn7.classList.add('d-none');
-        counter7.classList.add('d-none');
-    }
-
-    if (totalNum === 0) {
-        navIconDiv.classList.add('d-none')
-    }
-})
-
-removeBtn8.addEventListener('click', () => {
-    shoe8 -= 1;
-    totalNum -= 1;
-    iconNum.innerText = totalNum;
-    counter8.innerText = shoe8;
-
-    if (shoe8 === 0) {
-        removeBtn8.classList.add('d-none');
-        counter8.classList.add('d-none');
-    }
-
-    if (totalNum === 0) {
-        navIconDiv.classList.add('d-none')
-    }
-})
-
-removeBtn9.addEventListener('click', () => {
-    shoe9 -= 1;
-    totalNum -= 1;
-    iconNum.innerText = totalNum;
-    counter9.innerText = shoe9;
-
-    if (shoe9 === 0) {
-        removeBtn9.classList.add('d-none');
-        counter9.classList.add('d-none');
-    }
-
-    if (totalNum === 0) {
-        navIconDiv.classList.add('d-none')
-    }
-})
-
-removeBtn10.addEventListener('click', () => {
-    shoe10 -= 1;
-    totalNum -= 1;
-    iconNum.innerText = totalNum;
-    counter10.innerText = shoe10;
-
-    if (shoe10 === 0) {
-        removeBtn10.classList.add('d-none');
-        counter10.classList.add('d-none');
-    }
-
-    if (totalNum === 0) {
-        navIconDiv.classList.add('d-none')
-    }
-})
-
-removeBtn11.addEventListener('click', () => {
-    shoe11 -= 1;
-    totalNum -= 1;
-    iconNum.innerText = totalNum;
-    counter11.innerText = shoe11;
-
-    if (shoe11 === 0) {
-        removeBtn11.classList.add('d-none');
-        counter11.classList.add('d-none');
-    }
-
-    if (totalNum === 0) {
-        navIconDiv.classList.add('d-none')
-    }
-})
-
-removeBtn12.addEventListener('click', () => {
-    shoe12 -= 1;
-    totalNum -= 1;
-    iconNum.innerText = totalNum;
-    counter12.innerText = shoe12;
-
-    if (shoe12 === 0) {
-        removeBtn12.classList.add('d-none');
-        counter12.classList.add('d-none');
-    }
-
-    if (totalNum === 0) {
-        navIconDiv.classList.add('d-none')
-    }
 })
