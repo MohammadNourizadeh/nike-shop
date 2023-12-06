@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,68 @@
     <link rel="stylesheet" href="../../assets/bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <script src="../../assets/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js" defer></script>
     <link rel="stylesheet" href="../../assets/css/product-info/product-info.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="../../assets/JS/product-info.js" defer></script>
 
     <link rel="icon" type="image/x-icon" href="../../assets/images/icons8-nike-48.png">
     <title>nike</title>
 </head>
+
 <body>
-    
+    <div class="icon-div">
+        <a href="../../nike-shop.html" class="shadow rounded-5 btn btn-light"><i class="material-icons">arrow_back</i></a>
+    </div>
+    <div class="container">
+        <div class="row vh-100 justify-content-center align-items-center">
+            <div class="card mb-3 product-div rounded-5 overflow-hidden shadow" style="max-width: 1300px;">
+                <div class="row align-items-center ">
+                    <div class="col-md-4">
+                        <img src="../../assets/images/main-img/products/nike-shoe1.png" class="img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body mb-3">
+                            <h5 class="card-title text-center mb-4">nike air max penny</h5>
+                            <p class="card-text text-body-secondary">Pay tribute to a basketball icon in this Nike Air
+                                Max Penny, a
+                                near-exact replica of the coveted hoops original. The gold Swoosh design celebrates his
+                                '96 medal, while the wing piping on the sides delivers fine-tuned, off-court style with
+                                original details to celebrate both your retro style and a b-ball legend.
+                            </p>
+
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-3 col mb-2">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <div class="d-flex mt-2 mb-2">
+                                        <i class="material-icons">attach_money</i>
+                                        <p class="card-text h5" id="product-cost">149</p>
+                                    </div>
+                                    <div class="d-none mt-2 justify-content-center align-items-center text-success"
+                                        id="product-checkout-div">
+                                        <div class="d-flex">
+                                            <i class="material-icons">attach_money</i>
+                                            <p class="card-text h5" id="product-checkout"></p>
+                                        </div>
+                                        <h2 id="product-count" class="text-center ms-4"></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-12">
+                                <div class="d-flex align-items-center justify-content-center h-100">
+                                    <a href="#" class="btn btn-light shadow rounded-5 px-5" id="add-btn">add</a>
+                                    <a href="#" class="btn btn-danger shadow rounded-5 px-4 ms-2 d-none"
+                                        id="remove-btn">remove</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
+
 </html>

@@ -1,6 +1,39 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     text-transform: capitalize;
+    font-family: Impact, Haettenschweiler, sans-serif;
+}
+
+
+body {
+    position: relative;
+
+    .icon-div {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        z-index: 999;
+
+        a {
+            color: rgb(51, 50, 50);
+            transition: padding .2s ease-in-out;
+
+            &:hover {
+                color: black;
+                padding: .4rem 2rem;
+            }
+
+            i {
+                font-size: 1.3rem;
+                
+            }
+        }
+
+    }
+
+    .product-div {
+        background-color: rgba(223, 223, 223, 0.318);
+    }
 }

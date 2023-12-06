@@ -90,7 +90,7 @@ product.map(item => {
         <div class="card h-100 shadow">
          <div class="product-img-div position-relative">
              <small class="position-absolute end-0 h5 d-none"></small>
-             <img src=${item.img} class="card-img-top" alt="...">
+             <a href="./pages/product-info/product-info.html"><img src=${item.img} class="card-img-top" alt="..."></a>
          </div>
          <div class="card-body">
              <h5 class="card-title" id="card-title1">${item.pName}</h5>

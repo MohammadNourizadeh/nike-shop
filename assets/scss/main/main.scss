@@ -68,6 +68,16 @@
         display: flex;
         justify-content: center;
 
+        .filter-btn{
+            width: 65%;
+            transition: width .4s ease-in-out;
+
+            &:hover{
+                width: 100%;
+                transition: width .3s ease-in-out;
+            }
+        }
+
         nav {
 
             div {

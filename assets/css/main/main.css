@@ -47,6 +47,14 @@
   display: flex;
   justify-content: center;
 }
+.side-bar-col .filter-nav-div .filter-btn {
+  width: 65%;
+  transition: width 0.4s ease-in-out;
+}
+.side-bar-col .filter-nav-div .filter-btn:hover {
+  width: 100%;
+  transition: width 0.3s ease-in-out;
+}
 .side-bar-col .filter-nav-div nav div button {
   background-color: rgb(72, 72, 72);
   color: white;
