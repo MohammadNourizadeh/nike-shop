@@ -86,6 +86,7 @@ const product = [{
 
 const choosedProduct = [];
 const productAdder = (item) => {
+    console.log(item);
     choosedProduct.push(item);
 
     console.log(choosedProduct);
@@ -115,7 +116,7 @@ product.map(item => {
          </div>
 
          <div class="mb-2 w-100 d-flex justify-content-center">
-         <button class="btn btn-light px-4 shadow rounded-5" onclick='${() => {productAdder(item)}}'>add</button>
+         <button class="btn btn-light px-4 shadow rounded-5" onclick='${() => {productAdder(JSON.stringify(item))}}'>add</button>
              <button class="btn btn-danger px-2 shadow rounded-5 d-none" id="removing-btn">remove</button>
          </div>
          <div class="card-footer">
